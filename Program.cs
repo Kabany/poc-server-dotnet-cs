@@ -10,6 +10,7 @@ builder.Services.AddOpenApi();
 
 // Dependency Injections
 builder.Services.AddSingleton<IResponseService, ResponseService>();
+builder.Services.AddSingleton<IOperationsService, OperationsService>();
 
 var app = builder.Build();
 

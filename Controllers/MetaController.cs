@@ -19,7 +19,7 @@ public class MetaController : ControllerBase
   [HttpGet]
   [Route("ping")]
   public JsonBody<String?> SendPing() {
-    JsonBody<String?> body = _responseHelper.Success<String?>(null, "ping!");
+    var body = _responseHelper.Success<String?>(null, "ping!");
     return body;
   }
 
